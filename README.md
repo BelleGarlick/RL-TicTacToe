@@ -10,8 +10,8 @@ It learns using the temporal difference function:
 </blockquote>
 
 In other words, the value in the current state is increased by  difference between the current and the next states multiplied by the learning rate.
-This means that over time each value shifts slightly more towards the value of the future state. The states are initialised such that all winning states have value '1' and all losing states are value '-1', anything else (including draws) are set to a random value. The policy is learnt overtime using the afformentioned function by learning which states that lead towards a loss and which one leads towards a win. When training the agent always plays agains a policy which takes random actions, however, it could train using self play - a little tinkering is required but i've tried it and it does work.
+This means that over time each value shifts slightly more towards the value of the future state. The states are initialised such that all winning states have value '1' and all losing states are value '-1', anything else (including draws) are set to a random value. The policy is learnt overtime using the afformentioned function by learning which states that lead towards a loss and which one leads towards a win. When training the agent always plays agains a policy which takes random actions, however, it could train using self play - a little tinkering is required but i've tried it and it does work. It takes about 10-30s to train.
 
 ## Licence
-IDGAF
+The Unlicence.
 
