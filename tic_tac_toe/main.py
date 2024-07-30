@@ -1,9 +1,8 @@
-import random
-from environment import TicTacToe, X, O
-from agent import Agent
+from tic_tac_toe.environment import TicTacToe, X, O
+from tic_tac_toe.agent import Agent
 
         
-def get_player_move(env):
+def get_player_move():
     """
     Get the player move as an index in the board
     """
@@ -36,7 +35,7 @@ if __name__ == "__main__":
         game_over = False
         while not game_over:
             # human move
-            index = get_player_move(env)
+            index = get_player_move()
             step, reward, game_over, result = env.step(index, player=human)
             env.render()
             
